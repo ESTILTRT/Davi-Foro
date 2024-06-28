@@ -4,6 +4,8 @@ import com.david.foro.Domain.Foro.DTOs.DatosDetalleTopico;
 import com.david.foro.Domain.Foro.DTOs.DatosModificarTopico;
 import com.david.foro.Domain.Foro.DTOs.DatosRegistroTopicos;
 import com.david.foro.Domain.Foro.TopicoService;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import lombok.Value;
@@ -19,6 +21,8 @@ import java.net.URI;
 
 @RestController
 @RequestMapping("/foro")
+@SecurityRequirement(name = "bearer-key")
+@Tag(name = "Topicos",description = "Esta zona se encarga de todos los procesos relacionados con los tópicos.")
 public class TopicoController {
     @Autowired
     private TopicoService service;

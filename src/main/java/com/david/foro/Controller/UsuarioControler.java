@@ -4,6 +4,8 @@ import com.david.foro.Domain.Usuario.DTOs.DatosRegistroUsuarios;
 import com.david.foro.Domain.Usuario.DTOs.DatosRetornoUsuario;
 import com.david.foro.Domain.Usuario.DTOs.DatosUsuarioLogin;
 import com.david.foro.Domain.Usuario.UsuarioService;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/usuario")
+@SecurityRequirement(name = "bearer-key")
+@Tag(name = "Usuarios", description = "Esta zona es para la creación de los usuarios que podrán entrar en el foro.")
 public class UsuarioControler {
 
     @Autowired

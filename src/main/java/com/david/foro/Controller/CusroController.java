@@ -2,6 +2,8 @@ package com.david.foro.Controller;
 
 import com.david.foro.Domain.Curso.CursoService;
 import com.david.foro.Domain.Curso.DTOs.DatosRegistrarCurso;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +18,8 @@ import java.net.URI;
 
 @RestController
 @RequestMapping("/curso")
+@SecurityRequirement(name = "bearer-key")
+@Tag(name = "Cursos", description = "Esta zona se encarga de crear los cursos.")
 public class CusroController {
     @Autowired
     private CursoService service;
