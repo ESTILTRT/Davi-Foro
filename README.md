@@ -8,10 +8,10 @@ Se comunica por medio de los protocolos http
 
   Tambien tiene el metodo de autenticacion del usuario que funciona por medio del email quie se introdujo
     Este genera un **Token** que es el que permitira lograr entrar dentro de los controller.
-![2024-06-27-23-17-12](https://github.com/ESTILTRT/Davi-Foro/assets/157448750/86c6fbb5-9f76-4e07-8bf6-6de1ff361911)
+  ![2024-06-27-23-17-12](https://github.com/ESTILTRT/Davi-Foro/assets/157448750/86c6fbb5-9f76-4e07-8bf6-6de1ff361911)
 
   Ejemplo de cómo usar el barrer para la documentación.
-![barer](https://github.com/ESTILTRT/Davi-Foro/assets/157448750/f44b119a-734d-4a85-a5c9-2c81dd1dbc58)
+  ![barer](https://github.com/ESTILTRT/Davi-Foro/assets/157448750/f44b119a-734d-4a85-a5c9-2c81dd1dbc58)
 
 
 <h2>Controllers</h2>
@@ -19,7 +19,7 @@ Se comunica por medio de los protocolos http
 
   <h3>Cursps</h3>
     Este es el generador de cursos, el cual trabaja con el tipo de curso que es (backend, frontend, base de datos, ciberseguridad).
-![curso](https://github.com/ESTILTRT/Davi-Foro/assets/157448750/482da478-ef12-46e7-93d7-31a084337cbc)
+  ![curso](https://github.com/ESTILTRT/Davi-Foro/assets/157448750/482da478-ef12-46e7-93d7-31a084337cbc)
 
   <h2>**Topicos**</h2>
     Aquí es donde más se enfoca el proyecto, ya que este tiene varios métodos que se encargan de hacer el **CRUD** de los mismos.
@@ -27,18 +27,18 @@ Se comunica por medio de los protocolos http
   <h4>Crear topico</h4>
     Este pide el título, mensaje, usuario y curso al que pertenece el usuario para generar el tópico de la pregunta, además
       de que directamente guarda la fecha y hora de la publicación.
-![CrearForo](https://github.com/ESTILTRT/Davi-Foro/assets/157448750/a38a534f-e0a5-4428-80d2-1c3d13d174fa)
+  ![CrearForo](https://github.com/ESTILTRT/Davi-Foro/assets/157448750/a38a534f-e0a5-4428-80d2-1c3d13d174fa)
 
   <h4>Paginado y detalle de un solo topico</h4>
     Como el nombbre indica aqui se muestra el como se ve la paginacion de todos los topicos       
-![paginacion](https://github.com/ESTILTRT/Davi-Foro/assets/157448750/3d420c11-937f-4ec0-a61c-e616c6022482)
+  ![paginacion](https://github.com/ESTILTRT/Davi-Foro/assets/157448750/3d420c11-937f-4ec0-a61c-e616c6022482)
     
-    Esto es el detalle de un solo topico
-    ![id](https://github.com/ESTILTRT/Davi-Foro/assets/157448750/0f46b863-46b5-4956-ac36-553de54e9fb2)
+  Esto es el detalle de un solo topico
+  ![id](https://github.com/ESTILTRT/Davi-Foro/assets/157448750/0f46b863-46b5-4956-ac36-553de54e9fb2)
 
   <h4>Eliminar</h4>
     Este se encarga de eliminar el tópico de la base de datos por medio del ID.
-![2024-06-28 00-13-24](https://github.com/ESTILTRT/Davi-Foro/assets/157448750/dac6be91-f424-479a-b29d-b8ba40a0b1ad)
+  ![2024-06-28 00-13-24](https://github.com/ESTILTRT/Davi-Foro/assets/157448750/dac6be91-f424-479a-b29d-b8ba40a0b1ad)
 
   <h4>modificacion</h4>
     Este, al igual que el anterior, se maneja por el ID y solo se puede modificar el título o el mensaje del tópico.
